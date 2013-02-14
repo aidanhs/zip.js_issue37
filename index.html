@@ -1,0 +1,15 @@
+<html>
+<body>
+</body>
+
+<script type="text/javascript" src="zip/zip.js"></script>
+<script type="text/javascript" src="zip/zip-fs.js"></script>
+
+<script>
+  window.URL = window.URL || window.webkitURL || window.mozURL;
+  path = "dumptruck.zip";
+
+  (new zip.fs.FS()).importHttpContent("err.zip", false, function() {alert("b")})
+</script>
+
+</html>
